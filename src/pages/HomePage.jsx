@@ -8,7 +8,7 @@ import PageHeader from "../components/PageHeader";
 const HomePage = () => {
   return (
     <>
-      <PageHeader />
+      
       <HeroSection />
       <AboutUs />
       <OurServices />

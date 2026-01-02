@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import KosmosLogo from "./Logo";
 
 const Footer = () => {
@@ -25,7 +26,7 @@ const Footer = () => {
         </ul>
         <div className="flex flex-col gap-4">
           <KosmosLogo />
-          <p className="">metal fabrication</p>
+          <p className="">Kosmos Metal Steel Construction Works Ltd. delivers durable, industry-grade steel structures.</p>
         </div>
       </div>
 
@@ -33,19 +34,19 @@ const Footer = () => {
         <h3 className="text-lg font-semibold text-gray-800">Quick links</h3>
         <ul className="flex flex-col gap-4 text-sm font-semibold text-gray-700">
           <li>
-            <a href="#home">Home</a>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <a href="#about-us">About Us</a>
+            <Link to='/about-us'>About Us</Link>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <Link to='/services'>Services</Link>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <Link to='/portfolio'>Portfolio</Link>
           </li>
           <li>
-            <a href="#contacts">Contacts</a>
+            <Link to='/contact-us'>Contacts</Link>
           </li>
         </ul>
 
@@ -85,6 +86,14 @@ const Footer = () => {
       </div>
       
     </footer>
+    <CopyrightSection />
+    </>
+  );
+};
+export default Footer;
+
+export const CopyrightSection = () => {
+  return (
     <div className="bg-[#BD0C0B] py-5">
       <div className="container mx-auto text-center">
         <p className="text-sm text-white">
@@ -92,7 +101,5 @@ const Footer = () => {
         </p>
       </div>
     </div>
-    </>
-  );
-};
-export default Footer;
+  )
+}

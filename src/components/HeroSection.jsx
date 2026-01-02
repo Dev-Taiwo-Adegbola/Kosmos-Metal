@@ -1,4 +1,3 @@
-
 const HeroSection = () => {
   return (
     <section className="mt-22 p-5 px-5 md:px-10 h-125 lg:px-20 hero-bg flex max-lg:flex-col items-center justify-center text-center rounded-b-[250px] ">
@@ -35,3 +34,14 @@ const HeroSection = () => {
   );
 };
 export default HeroSection;
+
+export const SecondaryHeroSection = ({ title, description }) => {
+  return (
+    <section className="mt-22 p-5 px-5 md:px-10 h-70 lg:px-20 hero-bg flex flex-col items-center justify-center text-center rounded-b-[250px] text-white ">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold max-lg:text-center ">
+        {title}
+      </h2>
+      <p className=" p-3  text-lg font-normal">{description}</p>
+    </section>
+  );
+};

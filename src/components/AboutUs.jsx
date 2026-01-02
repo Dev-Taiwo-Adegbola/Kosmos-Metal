@@ -1,4 +1,4 @@
-import { Users, Verified } from "./AllIcons";
+import { ServiceIcon, Users, Verified } from "./AllIcons";
 import reputationImg from "../assets/images/reputation.webp";
 import AboutUsImage from "../assets/images/hero2.webp";
 
@@ -25,7 +25,7 @@ const AboutUs = () => {
           </div>
 
           <div className="text-gray-600 w-[300px]  p-5 rounded-xl ">
-            <Users style="size-[50px] fill-[#BD0C0B] mb-2 bg-[#bd0b0b27] rounded-lg p-2.5 animate-pulse " />
+            <ServiceIcon style="size-[50px] fill-[#BD0C0B] mb-2 bg-[#bd0b0b27] rounded-lg p-2.5 animate-pulse " />
             <span className="font-bold block text-[#BD0C0B]">
               Best Services
             </span>
