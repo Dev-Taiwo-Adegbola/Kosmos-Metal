@@ -1,4 +1,12 @@
+import { Link, useNavigate } from "react-router";
+
 const HeroSection = () => {
+  const navigate = useNavigate();
+  const whatsappMessage =
+    "Hello, I would like to request a quote for metal & steel solutions (petrol/kerosene tanks and filling-station canopies). Please send pricing, lead time, and available options. Company: [Your Company]; Contact: [Your Phone]. Thank you.";
+  const whatsappLink = `https://wa.me/+2348037772798?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
   return (
     <section className="mt-22 p-5 px-5 md:px-10 h-125 lg:px-20 hero-bg flex max-lg:flex-col items-center justify-center text-center rounded-b-[250px] ">
       <div className=" flex flex-col items-center  lg:w-[60%]">
@@ -13,10 +21,18 @@ const HeroSection = () => {
           </span>
         </h2>
         <div className="flex max-md:flex-col gap-2 md:gap-5 my-5 md:my-10">
-          <button className="mt-6 px-10 py-3 bg-blue-600 text-white rounded-4xl font-semibold hover:bg-[#BD0C0B] transition">
+          <Link
+            to={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 px-10 py-3 bg-blue-600 text-white rounded-4xl font-semibold hover:bg-[#BD0C0B] transition"
+          >
             Request a Quote
-          </button>
-          <button className="mt-6 px-10 py-3 bg-blue-600 text-white rounded-4xl font-semibold hover:bg-[#BD0C0B] transition">
+          </Link>
+          <button
+            onClick={() => navigate("/portfolio")}
+            className="mt-6 px-10 py-3 bg-blue-600 text-white rounded-4xl font-semibold hover:bg-[#BD0C0B] transition"
+          >
             View Our Projects
           </button>
         </div>

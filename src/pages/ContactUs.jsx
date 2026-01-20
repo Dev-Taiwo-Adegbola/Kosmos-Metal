@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SecondaryHeroSection } from "../components/HeroSection";
 import { FaceBookIcon, InstaIcon } from "../components/AllIcons";
 import { CopyrightSection } from "../components/Footer";
+import { useLocation } from "react-router";
 
 const ContactUs = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const location = useLocation();
+  const { sender } = location.state || {};
+
+  useEffect(() => {
+    sender && setEmail(sender);
+  }, []);
 
   return (
     <div>
@@ -22,8 +29,7 @@ const ContactUs = () => {
         </h2>
         <div id="contactUs" className=" flex items-center max-lg:flex-col  ">
           <div className="overflow-hidden flex flex-col justify-between w-[50%] max-lg:w-full bg-[#BD0C0B] max-lg:p-10 lg:px-20 lg:py-10 pl-10 mt-15 lg:min-h-[70vh] h-fit text-white ">
-            <div >
-              
+            <div>
               <h1 className="text-2xl font-semibold rounded-4xl  mb-10 py-2 px-4 w-fit text-white underline">
                 Contact us through any of these
               </h1>
@@ -55,7 +61,12 @@ const ContactUs = () => {
               </p>
               <p className="">
                 <span className="font-semibold text-blue-500">Whatsapp:</span>{" "}
-                <a href="https://wa.me/+2348037772798" className="text-white">
+                <a
+                  href="https://wa.me/+2348037772798"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
                   0803 777 2798
                 </a>
               </p>
@@ -71,8 +82,8 @@ const ContactUs = () => {
                 Social handles
               </h2>
               <span className="flex gap-2 mt-4">
-                <FaceBookIcon style={'size-[30px] fill-white'} />
-                <InstaIcon style={'size-[30px] fill-white'} />
+                <FaceBookIcon style={"size-[30px] fill-white"} />
+                <InstaIcon style={"size-[30px] fill-white"} />
               </span>
             </div>
             {/* <img src={footerImg} alt="" className="" /> */}
@@ -89,7 +100,7 @@ const ContactUs = () => {
             <input
               type="hidden"
               name="access_key"
-              value="fd03389d-1188-4ca9-ad4e-"
+              value="4504c14f-f2d0-41d0-a51e-5387b0335b09"
             ></input>
             <input type="hidden" name="redirect" value="false"></input>
             <input
