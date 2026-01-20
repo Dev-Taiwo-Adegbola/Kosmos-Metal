@@ -1,13 +1,12 @@
 import AboutUsImage from "../assets/images/hero2.webp";
 import { CopyrightSection } from "../components/Footer";
-import { SecondaryHeroSection } from "../components/HeroSection"
+import { SecondaryHeroSection } from "../components/HeroSection";
 
 const AboutUs = () => {
   return (
     <>
-    <div>
+      <div>
         <SecondaryHeroSection
-          
           title="Learn more about Kosmos"
           description="Learn more about our company and values."
         />
@@ -16,37 +15,45 @@ const AboutUs = () => {
           About Us
           <span className="block w-[60px] h-[4px] bg-[#BD0C0B] mx-auto mt-2"></span>
         </h2>
-        <p className="w-[80%] md:w-[60%] lg:w-[40%] text-center mx-auto pt-10">Kosmos Metal Steel Construction Works Ltd. delivers durable,
-            industry-grade steel structures, petroleum tankers, storage tanks,
-            and filling station infrastructure across Nigeria.</p>
+        <p className="w-[80%] md:w-[60%] lg:w-[40%] text-center mx-auto pt-10">
+          Kosmos Metal Steel Construction Works Ltd. is a Nigerian-based
+          engineering company specializing in the fabrication and construction
+          of industry-grade steel structures, petroleum tankers, storage tanks,
+          and filling station infrastructure. We are committed to delivering
+          durable, safe, and high-quality steel solutions tailored to industry
+          standards across Nigeria.
+        </p>
 
         <div className="flex flex-col  items-center lg:flex-row p-5 md:p-20 ">
-          
-        <img
-          src={AboutUsImage}
-          alt=""
-          className="w-full min-h-[250px] lg:min-w-[70%]"
-        />
-        <div className=" w-[80%]  lg:min-w-[40%] bg-blue-600 text-white py-5 px-8 md:py-10 md:px-15 max-lg:-translate-y-[40%] lg:-translate-x-[40%] ">
-          <span className="font-bold block text-2xl">About Kosmos</span>
-          <p className=" ">
-            Kosmos Metal Steel Construction Works Ltd. delivers durable,
-            industry-grade steel structures, petroleum tankers, storage tanks,
-            and filling station infrastructure across Nigeria.
-          </p>
+          <img
+            src={AboutUsImage}
+            alt=""
+            className="w-full min-h-[250px] lg:min-w-[70%]"
+          />
+          <div className=" w-[80%]  lg:min-w-[40%] bg-blue-600 text-white py-5 px-8 md:py-10 md:px-15 max-lg:-translate-y-[40%] lg:-translate-x-[40%] ">
+            <span className="font-bold block text-2xl">About Kosmos</span>
+            <p className=" ">
+              Kosmos Metal Steel Construction Works Ltd. delivers durable,
+              industry-grade steel structures, petroleum tankers, storage tanks,
+              and filling station infrastructure across Nigeria.
+            </p>
 
-          <p className="mt-7 hidden md:block">
-            We do Fabrication and delivery of kerosene and petrol tankers for
-            fuel distributors, logistics companies, and industrial operators
-            across Nigeria.
-          </p>
+            <p className="mt-7 md:block">
+              We do Fabrication and delivery of kerosene and petrol tankers for
+              fuel distributors, logistics companies, and industrial operators
+              across Nigeria.
+            </p>
 
-          
+            <p className="mt-7  md:block">
+              We have been at the forefront of the steel construction industry,
+              providing innovative solutions and exceptional service to our
+              clients for over 10 years with a commitment to quality and safety.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <CopyrightSection />
+      <CopyrightSection />
     </>
-  )
-}
-export default AboutUs
+  );
+};
+export default AboutUs;

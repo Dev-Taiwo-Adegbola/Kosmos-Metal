@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <>
       <footer className="flex flex-wrap gap-15 py-15 px-5 md:px-10 lg:px-20  items-start bg-gray-100">
-        <div className="flex flex-col-reverse gap-8 w-full md:w-[45%] lg:w-[30%]">
+        <div className="flex flex-col-reverse gap-8 w-full md:w-[45%] lg:w-[35%]">
           <ul className="flex flex-col gap-4 text-sm font-semibold text-gray-700">
             <span className="block text-lg font-bold text-gray-800">
               Contact Information
@@ -33,6 +33,12 @@ const Footer = () => {
             </li>
             <li>
               <span className="text-[#BD0C0B] ">Email: </span>
+              <a
+                href="mailto:kosmosmetalconstructionworkltd@gmail.com"
+                className="text-gray-700"
+              >
+                kosmosmetalconstructionworkltd@gmail.com
+              </a>
             </li>
           </ul>
           <div className="flex flex-col gap-4">

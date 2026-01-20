@@ -20,6 +20,7 @@ import eighteen from "../assets/images/gallery/eighteen.jpg";
 import nineteen from "../assets/images/gallery/nineteen.jpg";
 import twenty from "../assets/images/gallery/twenty.jpg";
 import twentyOne from "../assets/images/gallery/twentyOne.jpg";
+import { CopyrightSection } from "../components/Footer";
 
 const Portfolio = () => {
   return (
@@ -52,6 +53,7 @@ const Portfolio = () => {
         <Img src={twenty} />
         <Img src={twentyOne} />
       </div>
+      <CopyrightSection />
     </>
   );
 };

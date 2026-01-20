@@ -1,13 +1,15 @@
 import { ServiceIcon, Users, Verified } from "./AllIcons";
 import reputationImg from "../assets/images/reputation.webp";
 import AboutUsImage from "../assets/images/hero2.webp";
+import { useNavigate } from "react-router";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   return (
     <section className="pt-10 p-5 px-5 md:px-10 lg:px-20 flex flex-col gap-8 items-center">
       <h2 className="text-3xl font-bold text-center text-[#BD0C0B]">
         Our Reputation
-      <span className="block w-[60px] h-[4px] bg-[#BD0C0B] mx-auto mt-2"></span>
+        <span className="block w-[60px] h-[4px] bg-[#BD0C0B] mx-auto mt-2"></span>
       </h2>
 
       <div className="flex max-lg:flex-col items-center justify-between   gap-15 p-10  ">
@@ -67,8 +69,14 @@ const AboutUs = () => {
             fuel distributors, logistics companies, and industrial operators
             across Nigeria.
           </p>
+          
 
-          <button className="mt-7 bg-[#BD0C0B] text-white py-2 px-4 rounded">
+          <button
+            onClick={() => {
+              navigate("/about-us");
+            }}
+            className="mt-7 bg-[#BD0C0B] text-white py-2 px-4 rounded"
+          >
             Learn More
           </button>
         </div>

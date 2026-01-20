@@ -66,7 +66,13 @@ const PageHeader = () => {
           </button>
         </ul>
       </nav>
-      <button className="hidden lg:block px-10 py-3 bg-blue-600 text-white rounded-4xl font-semibold hover:bg-[#BD0C0B] transition">
+      <button
+        onClick={() => {
+          setMenuToggle(!menuToggle);
+          navigate("/contact-us");
+        }}
+        className="hidden lg:block px-10 py-3 bg-blue-600 text-white rounded-4xl font-semibold hover:bg-[#BD0C0B] transition"
+      >
         Contact us
       </button>
       <button onClick={() => setMenuToggle(!menuToggle)} className="lg:hidden">
