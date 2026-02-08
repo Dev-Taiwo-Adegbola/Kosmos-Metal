@@ -20,6 +20,14 @@ import eighteen from "../assets/images/gallery/eighteen.jpg";
 import nineteen from "../assets/images/gallery/nineteen.jpg";
 import twenty from "../assets/images/gallery/twenty.jpg";
 import twentyOne from "../assets/images/gallery/twentyOne.jpg";
+
+import first_0 from "../assets/images/gallery_0/first.jpg";
+import second_0 from "../assets/images/gallery_0/second.jpg";
+import third_0 from "../assets/images/gallery_0/third.jpg";
+import forth_0 from "../assets/images/gallery_0/forth.jpg";
+import sixth_0 from "../assets/images/gallery_0/sixth.jpg";
+import seventh_0 from "../assets/images/gallery_0/seventh.jpg";
+import eigth_0 from "../assets/images/gallery_0/eighth.jpg";
 import { CopyrightSection } from "../components/Footer";
 
 const Portfolio = () => {
@@ -31,6 +39,14 @@ const Portfolio = () => {
       />
 
       <div className="grid grid-cols-1 gap-4 p-5 md:p-11 auto md:grid-cols-2 lg:grid-cols-3 ">
+        <Img src={first_0} />
+        <Img src={second_0} />
+        <Img src={third_0} />
+        <Img src={forth_0} />
+        <Img src={sixth_0} />
+        <Img src={seventh_0} />
+        <Img src={eigth_0} />
+
         <Img src={first} />
         <Img src={second} />
         <Img src={third} />
